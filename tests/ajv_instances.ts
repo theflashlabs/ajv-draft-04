@@ -1,5 +1,5 @@
-import type AjvCore from "ajv/dist/core"
-import type {Options} from "ajv/dist/core"
+import type AjvCore from "@theflashlabs/ajv-plus/dist/core"
+import type {Options} from "@theflashlabs/ajv-plus/dist/core"
 
 export default function getAjvInstances(
   _Ajv: typeof AjvCore,

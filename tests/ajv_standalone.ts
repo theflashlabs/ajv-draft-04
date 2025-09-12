@@ -1,5 +1,5 @@
-import type AjvCore from "ajv/dist/core"
-import AjvPack from "ajv/dist/standalone/instance"
+import type AjvCore from "@theflashlabs/ajv-plus/dist/core"
+import AjvPack from "@theflashlabs/ajv-plus/dist/standalone/instance"
 
 export function withStandalone(instances: AjvCore[]): (AjvCore | AjvPack)[] {
   return [...(instances as (AjvCore | AjvPack)[]), ...instances.map(makeStandalone)]

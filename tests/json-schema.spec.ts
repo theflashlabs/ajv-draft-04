@@ -2,7 +2,7 @@ import _Ajv, {SchemaObject} from ".."
 import getAjvInstances from "./ajv_instances"
 import options from "./ajv_options"
 import {afterError, afterEach} from "./after_test"
-import ajvFormats from "ajv-formats"
+import ajvFormats from "@theflashlabs/ajv-formats"
 import * as assert from "assert"
 import tests from "./_json/draft4"
 
@@ -27,6 +27,7 @@ const instances = getAjvInstances(_Ajv, options, {
 for (const ajv of instances) {
   ajv.opts.code.source = true
   for (const id in remoteRefs) ajv.addSchema(remoteRefs[id], id)
+  //@ts-ignore
   ajvFormats(ajv)
 }
 
