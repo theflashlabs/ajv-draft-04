@@ -1,7 +1,7 @@
-import type {AnySchemaObject, Options} from "ajv/dist/core"
-import AjvCore from "ajv/dist/core"
+import type {AnySchemaObject, Options} from "@theflashlabs/ajv-plus/dist/core"
+import AjvCore from "@theflashlabs/ajv-plus/dist/core"
 import draft4Vocabularies from "./vocabulary/draft4"
-import discriminator from "ajv/dist/vocabularies/discriminator"
+import discriminator from "@theflashlabs/ajv-plus/dist/vocabularies/discriminator"
 import * as draft4MetaSchema from "./refs/json-schema-draft-04.json"
 
 const META_SUPPORT_DATA = ["/properties"]
@@ -63,7 +63,7 @@ export {
   SchemaValidateFunction,
   ErrorObject,
   ErrorNoParams,
-} from "ajv/dist/types"
+} from "@theflashlabs/ajv-plus/dist/types"
 
 export {
   Plugin,
@@ -72,10 +72,19 @@ export {
   InstanceOptions,
   Logger,
   ErrorsTextOptions,
-} from "ajv/dist/core"
-export {SchemaCxt, SchemaObjCxt} from "ajv/dist/core"
-export {KeywordCxt} from "ajv/dist/core"
-export {DefinedError} from "ajv/dist/core"
-export {JSONType} from "ajv/dist/core"
-export {JSONSchemaType} from "ajv/dist/core"
-export {_, str, stringify, nil, Name, Code, CodeGen, CodeGenOptions} from "ajv/dist/core"
+} from "@theflashlabs/ajv-plus/dist/core"
+export {SchemaCxt, SchemaObjCxt} from "@theflashlabs/ajv-plus/dist/core"
+export {KeywordCxt} from "@theflashlabs/ajv-plus/dist/core"
+export {DefinedError} from "@theflashlabs/ajv-plus/dist/core"
+export {JSONType} from "@theflashlabs/ajv-plus/dist/core"
+export {JSONSchemaType} from "@theflashlabs/ajv-plus/dist/core"
+export {
+  _,
+  str,
+  stringify,
+  nil,
+  Name,
+  Code,
+  CodeGen,
+  CodeGenOptions,
+} from "@theflashlabs/ajv-plus/dist/core"

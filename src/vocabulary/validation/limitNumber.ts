@@ -3,10 +3,10 @@ import type {
   ErrorObject,
   KeywordCxt,
   KeywordErrorDefinition,
-} from "ajv/dist/core"
-import type {KeywordErrorCxt} from "ajv/dist/types"
-import {_, str, Code} from "ajv/dist/core"
-import {operators} from "ajv/dist/compile/codegen"
+} from "@theflashlabs/ajv-plus/dist/core"
+import type {KeywordErrorCxt} from "@theflashlabs/ajv-plus/dist/types"
+import {_, str, Code} from "@theflashlabs/ajv-plus/dist/core"
+import {operators} from "@theflashlabs/ajv-plus/dist/compile/codegen"
 
 const ops = operators
 
