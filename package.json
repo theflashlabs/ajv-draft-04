@@ -42,10 +42,10 @@
   "homepage": "https://github.com/theflashlabs/ajv-draft-04#readme",
   "dependencies": {},
   "peerDependencies": {
-    "@theflashlabs/ajv-plus": "^0.0.3"
+    "@theflashlabs/ajv-plus": "^1.0.0"
   },
   "peerDependenciesMeta": {
-    "ajv": {
+    "ajv-plus": {
       "optional": true
     }
   },
